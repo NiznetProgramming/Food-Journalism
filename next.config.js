@@ -1,7 +1,15 @@
 /**
- * Basic Next.js config. If you host on GitHub Pages under a repo (e.g. username.github.io/repo)
- * you may need to set assetPrefix and basePath to "/repo" — see README.
+ * Next.js config for GitHub Pages project site under /Food-Journalism
+ * Ensures exported assets reference the repository sub-path correctly.
  */
+const repoBasePath = '/Food-Journalism'
+
 module.exports = {
   trailingSlash: true,
+  basePath: repoBasePath,
+  assetPrefix: repoBasePath,
+  images: {
+    // disable next's image optimization for static export / GitHub Pages
+    unoptimized: true,
+  },
 }
