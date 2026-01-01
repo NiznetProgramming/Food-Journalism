@@ -8,8 +8,8 @@ export default function Home({ posts }) {
       <header className="site-header">
         <h1>First Food Journalism Vit Down Syndrome</h1>
         <picture className="header-image-wrap">
-          <source srcSet="/images/tenzin_fitness.jpg" type="image/jpeg" />
-          <img src="/images/tenzin_fitness.svg" alt="Tenzin Fitness" className="header-image" />
+          <source srcSet={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/tenzin_fitness.jpg`} type="image/jpeg" />
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/tenzin_fitness.svg`} alt="Tenzin Fitness" className="header-image" />
         </picture>
       </header>
       <main>

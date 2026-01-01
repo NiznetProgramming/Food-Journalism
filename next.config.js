@@ -12,4 +12,7 @@ module.exports = {
     // disable next's image optimization for static export / GitHub Pages
     unoptimized: true,
   },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: repoBasePath,
+  },
 }

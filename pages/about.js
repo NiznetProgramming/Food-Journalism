@@ -9,8 +9,8 @@ export default function About() {
         <p>I am from India, Nepal, and Tibet and tink all da food is so tasty.  Except Balut.</p>
         <figure className="about-image-wrap">
           <picture>
-            <source srcSet="/images/streetzin.jpg" type="image/jpeg" />
-            <img src="/images/streetzin.svg" alt="Street scene" className="about-image" />
+            <source srcSet={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/streetzin.jpg`} type="image/jpeg" />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/streetzin.svg`} alt="Street scene" className="about-image" />
           </picture>
           <figcaption>Jackson Heights street eating — photo by Simi</figcaption>
         </figure>
