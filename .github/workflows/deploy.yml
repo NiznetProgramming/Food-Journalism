@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+# Give the workflow permission to write repository contents so it can push to gh-pages
+permissions:
+  contents: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
