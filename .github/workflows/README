@@ -1,0 +1,3 @@
+This folder contains GitHub Actions workflows. The `deploy.yml` workflow will run on push to `main` and publish the `out/` folder to `gh-pages` using `peaceiris/actions-gh-pages`.
+
+Make sure your repo's default branch is `main` (or update `deploy.yml` accordingly).

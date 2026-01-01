@@ -1,0 +1,26 @@
+{
+  "name": "food-journal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "eslint . --ext .js,.jsx",
+    "format": "prettier --write .",
+    "deploy": "npm run build && gh-pages -d out"
+  },
+  "dependencies": {
+    "next": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next-mdx-remote": "^4.2.1",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^13.5.0",
+    "prettier": "^2.8.0"
+  }
+}
