@@ -6,7 +6,7 @@ export default function Home({ posts }) {
   return (
     <Layout>
       <header className="site-header">
-        <h1>First Food Journalism Vit Down Syndrome</h1>
+        <h1>Dumbest Food Journalism in da Vurl</h1>
         <picture className="header-image-wrap">
           <source srcSet={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/tenzin_fitness.jpg`} type="image/jpeg" />
           <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/tenzin_fitness.svg`} alt="Tenzin Fitness" className="header-image" />
