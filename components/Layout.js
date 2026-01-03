@@ -6,6 +6,7 @@ export default function Layout({ children }) {
       <nav className="nav">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
+        <Link href="/special-interests">Special Interests</Link>
       </nav>
       {children}
       <footer className="footer">
